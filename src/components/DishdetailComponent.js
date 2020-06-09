@@ -67,7 +67,7 @@ import { Card,CardImg,CardText,CardBody,CardTitle } from 'reactstrap'
 
 
 		return(
-			<div className="row col-12 col-md-5 m-1">
+			<div className="row col-12 col-md-5 m-1" >
 				<RenderDish dish={dish}/>
 				<RenderComments comments={dish.comments}/>
 
