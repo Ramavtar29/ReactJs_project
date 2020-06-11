@@ -41,6 +41,7 @@ import { Card,CardImg,CardText,CardBody,CardTitle } from 'reactstrap'
 	{
 		if (dish != null){
 			return(
+
 				<Card className="col-12 col-md-5 m-1">
 					<CardImg width="100%" src={dish.image} alt={dish.name} />
 					<CardBody>
@@ -49,6 +50,7 @@ import { Card,CardImg,CardText,CardBody,CardTitle } from 'reactstrap'
 					</CardBody>
 
 				</Card>
+
 				);
 		}
 		else{
@@ -67,10 +69,11 @@ import { Card,CardImg,CardText,CardBody,CardTitle } from 'reactstrap'
 
 
 		return(
-			<div className="row col-12 col-md-5 m-1" >
-				<RenderDish dish={dish}/>
-				<RenderComments comments={dish.comments}/>
-
+      <div className="container">
+  			<div className="row" >
+  				<RenderDish dish={dish}/>
+  				<RenderComments comments={dish.comments}/>
+        </div>
 			</div>
 
 			);
