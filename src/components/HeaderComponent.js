@@ -18,6 +18,8 @@ class Header extends Component {
 
   }
 
+
+
   toggleNav(){
 // set the state
     this.setState({
